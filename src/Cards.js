@@ -21,18 +21,13 @@ function Cards() {
     const [currentPerson ,setCurrentPerson] = useState(0);
 
 
-function handelSwipe()
-{
-    setCurrentPerson = currentPerson + 1;
-}
-
     
     return (
         <div className="cards">
 
             <div className="actualCards">
 
-                <TinderCard onSwipe={handelSwipe}>
+                <TinderCard onSwipe={()=> setCurrentPerson( currentPerson + 1 )}>
 
 
                 <h3>Name- {people[currentPerson].name}</h3>

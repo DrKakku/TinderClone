@@ -13,14 +13,14 @@ function Header() {
                 <AccountCircleIcon  fontSize="large" className="header_icon" />
             </IconButton>
 
-        
+            <IconButton >
             <img
             className="header_logo"
             src = {logo}
             alt=""
             onClick={hello}
             />
-
+</IconButton>
 
             <IconButton>
                 <ChatBubbleRoundedIcon  fontSize="large" className="header_icon"  />

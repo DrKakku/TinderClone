@@ -1,8 +1,15 @@
 .cards {
     display: flex;
     padding: 10vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 150;
+    width: 80vw;
 }
 
 .personPhoto {
-    width: 30vw;
+    width: 60vw;
+    max-height: 70vh;
+    aspect-ratio: initial;
 }
