@@ -1,0 +1,8 @@
+.cards {
+    display: flex;
+    padding: 10vw;
+}
+
+.personPhoto {
+    width: 30vw;
+}
