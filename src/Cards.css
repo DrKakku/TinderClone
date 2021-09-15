@@ -1,15 +1,57 @@
 .cards {
     display: flex;
-    padding: 10vw;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     z-index: 150;
-    width: 80vw;
+    max-width: 95vw;
+    height: 70vh;
+    margin: 6vw;
+    /* border-radius: 20%; */
 }
 
-.personPhoto {
-    width: 60vw;
-    max-height: 70vh;
-    aspect-ratio: initial;
+.cards__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+    align-items: center;
+    justify-self: center;
+}
+
+.cards__swipe {
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards__content {
+    display: flex;
+    background-color: antiquewhite;
+    background-blend-mode: darken;
+    padding: 2vw;
+    width: 90vw;
+    height: 70vh;
+    box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    -webkit-text-size-adjust: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    text-align: end;
+}
+
+.cards h3 {
+    color: rgb(143, 192, 192);
+    text-decoration: wavy;
+    text-transform: capitalize;
+    text-shadow: 2px black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 2ex;
 }

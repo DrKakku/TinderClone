@@ -15,25 +15,43 @@ function Cards() {
             url:"https://miro.medium.com/max/1000/1*fNLMb7DHUQfn18w8YvyLQA.png",
             age:"21",
             gender:"F"
+        },{
+            name:"jeva Laal",
+            url:"https://www.thepassivevoice.com/wp-content/uploads/2020/05/a1-6.jpg",
+            age:"24",
+            gender:"M"
+        },
+        {
+            name:"Tanu didi",
+            url:"https://miro.medium.com/max/1000/1*fNLMb7DHUQfn18w8YvyLQA.png",
+            age:"21",
+            gender:"F"
         }
     ]);
-
-    const [currentPerson ,setCurrentPerson] = useState(0);
 
 
     
     return (
         <div className="cards">
 
-            <div className="actualCards">
 
-                <TinderCard onSwipe={()=> setCurrentPerson( currentPerson + 1 )}>
+            <div className="cards__container">
+                { people.map((persons,key) => (
+                    <TinderCard 
+                    className="cards__swipe" 
+                    preventSwipe={['up','down']}
+                    key={key}
+                    // onSwipe={()=> setCurrentPerson( currentPerson + 1 )}
+                    
+                    >
 
 
-                <h3>Name- {people[currentPerson].name}</h3>
-                <img className="personPhoto" src={people[currentPerson].url}/>
-
-                </TinderCard>
+                    <div className="cards__content" style={{backgroundImage:`url(${persons.url})`}}>
+                    <h3>Name- {persons.name} </h3>
+                    </div>
+                    </TinderCard>
+                ))}
+                
             </div>
 
         </div>

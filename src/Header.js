@@ -3,7 +3,7 @@ import "./Header.css"
 import ChatBubbleRoundedIcon from '@material-ui/icons/ChatBubbleRounded';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { IconButton } from '@material-ui/core';
-import logo from "./logo.jpg"
+import logo from "./logo.png"
 
 function Header() {
     return (
